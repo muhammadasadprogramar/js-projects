@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="btns">
+      <a href="index.html"
+        ><button id="counter"><span>First</span></button></a
+      >
+      <a href="second.html"
+        ><button id="reset"><span>Second</span></button></a
+      >
+      <a href="third.html"
+        ><button id="counter"><span>Third</span></button></a
+      >
+      <a href="fourth.html"
+        ><button id="reset"><span>Fourth</span></button></a
+      >
+    </div>
+    <div class="img">
+      <a href="fourth.html"><img src="done.png" alt="next logo" /></a>
+    </div>
+    <script>
+      // question 1
+      document.write("<br>" + "<h3>Q No 1</h3>" + "<br>");
+      var education = [
+        "SSC",
+        "HSC",
+        "BCS",
+        "BS",
+        "BCOM",
+        "MS",
+        "M. Phil",
+        "PHD",
+      ];
+      for (var i = 1; i <= 7; i++)
+        document.write("(" + i + ") " + " " + education[i] + "<br>");
+
+      // // question 2
+      var names = ["Student1", "Student2", "Student3", "Student4"];
+      var mark = [320, 250, 400, 120];
+      var totalMark = 400;
+      document.write("<br>" + "<h3>Q No 2</h3>" + "<br>");
+      document.write("Total Marks 400" + "<br>");
+
+      document.write(
+        "Marks Of " +
+          names[0] +
+          " is " +
+          mark[0] +
+          " Percentage: " +
+          (mark[0] / totalMark) * 100 +
+          "%" +
+          "<br>"
+      );
+      document.write(
+        "Marks Of " +
+          names[1] +
+          " is " +
+          mark[1] +
+          " Percentage: " +
+          (mark[1] / totalMark) * 100 +
+          "%" +
+          "<br>"
+      );
+      document.write(
+        "Marks Of " +
+          names[2] +
+          " is " +
+          mark[2] +
+          " Percentage: " +
+          (mark[2] / totalMark) * 100 +
+          "%" +
+          "<br>"
+      );
+      document.write(
+        "Marks Of " +
+          names[3] +
+          " is " +
+          mark[3] +
+          " Percentage: " +
+          (mark[3] / totalMark) * 100 +
+          "%" +
+          "<br>"
+      );
+
+      //  question 3
+
+      var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+
+      document.write("<br>" + "<h3>Q No 3</h3>" + "<br>");
+
+      document.write("Karachi, Lahore, Islamabad, Quetta, Peshawar" + "<br>");
+      document.write("Two of my favourite cites" + "<br>");
+      for (var i = 2; i <= 3; i++)
+        document.write("(" + i + ") " + " " + cities[i] + "<br>");
+
+      // question 4
+
+      var text = ["This ", "is ", "my ", "Cat "];
+      document.write("<br>" + "<h3>Array Text: </h3>" + "<br>" + text);
+      var mixtext = text.join(" ");
+      document.write("<br>");
+      document.write("<br>" + "<h3>Arry String: </h3>" + "<br>" + mixtext);
+      document.write("<br>");
+      // question 5
+
+      var devices = ["Keyboard ", "Mouse ", "Printer ", "Monitor "];
+      document.write("<br>" + "<h3>Device:</h3>" + "<br>");
+      document.write(devices);
+      inLine = devices.shift();
+      document.write("<br>" + "Out: " + "<br>" + inLine);
+      inLine = devices.shift();
+      document.write("<br>" + "Out: " + "<br>" + inLine);
+      inLine = devices.shift();
+      document.write("<br>" + "Out: " + "<br>" + inLine);
+      inLine = devices.shift();
+      document.write("<br>" + "Out: " + "<br>" + inLine);
+
+      // question 6
+
+      document.write("<br>");
+      var values = ["Keyboard ", "Mouse ", "Printer ", "Monitor "];
+      document.write("<br>");
+      document.write("<h3>Devices:</h3>" + "<br>");
+      document.write(values);
+      reverse = values.pop();
+      document.write("<br>" + "Out: " + "<br>" + reverse);
+      reverse = values.pop();
+      document.write("<br>" + "Out: " + "<br>" + reverse);
+      reverse = values.pop();
+      document.write("<br>" + "Out: " + "<br>" + reverse);
+      reverse = values.pop();
+      document.write("<br>" + "Out: " + "<br>" + reverse);
+      // question 7
+
+      var mix = prompt(
+        "Select in this you are using Mobile? (Like Apple,Samsung,Motorola,Oppo,Vivo,Nokia,Sony & Haier)"
+      );
+      document.write("<br>");
+      document.write("<br>" + "<h3>Your are Using Mobile</h3>" + "<br>");
+      if (
+        mix == "Apple" ||
+        "Samsung" ||
+        "Motorola" ||
+        "Nokia" ||
+        "Sony" ||
+        "Haier" ||
+        "Vivo" ||
+        "Oppo"
+      ) {
+        document.write(mix);
+      } else {
+        document.write("Please Choose you are using mobile");
+      }
+    </script>
+  </body>
+</html>

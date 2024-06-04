@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(59, 60, 68);
+  flex-direction: column;
+  font-size: 16px;
+  font-family: "gilroy", sans-serif, "poppins", "arial";
+  font-weight: 600;
+  color: aliceblue;
+  padding-bottom: 30px;
+  line-height: 25px;
+}
+.btns button {
+  margin: 0px 20px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 160px;
+  margin-top: 40px;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.btns button:active {
+  transform: scale(0.95);
+}
+
+.btns button:hover span {
+  color: #006eff;
+  transition: all ease-in-out 0.8s;
+}
+.btns button span {
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 10;
+  position: relative;
+}
+button#counter {
+  z-index: 1;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: #006eff;
+  /* padding: 12px 25px; */
+  box-shadow: 0 0 17px #006eff;
+}
+button#reset {
+  z-index: 1;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: #fff;
+  color: #006eff;
+  /* padding: 12px 25px; */
+  box-shadow: 0 0 17px #fff;
+}
+button#reset:hover span {
+  color: #fff;
+}
+.btns button#counter::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: scale(0);
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  transition: all ease-in-out 0.7s;
+  border-radius: 100px;
+}
+.btns button#counter:hover::after {
+  top: 0%;
+  transform: scale(3);
+}
+.btns button#reset::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: scale(0);
+  height: 100%;
+  width: 100%;
+  background-color: #006eff;
+  color: #fff;
+  transition: all ease-in-out 0.7s;
+  border-radius: 100px;
+}
+.btns button#reset:hover::after {
+  top: 0%;
+  transform: scale(3);
+}
+
+h3 {
+  color: #006eff;
+  text-shadow: 0 0 2px #a1a2ec;
+  font-size: 23px;
+}
+
+.img > a > img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px #006eff;
+  cursor: pointer;
+}

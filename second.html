@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="btns">
+      <a href="index.html"
+        ><button id="counter"><span>First</span></button></a
+      >
+      <a href="second.html"
+        ><button id="reset"><span>Second</span></button></a
+      >
+      <a href="third.html"
+        ><button id="counter"><span>Third</span></button></a
+      >
+      <a href="fourth.html"
+        ><button id="reset"><span>Fourth</span></button></a
+      >
+    </div>
+    <div class="img">
+      <a href="third.html"><img src="done.png" alt="next logo" /></a>
+    </div>
+    <script>
+      // question 1
+      var anyNumber = prompt("Enter Any Number");
+
+      if (anyNumber <= 100) {
+        alert("Please Enter Capital Number");
+      } else if (anyNumber <= 350) {
+        alert("Your Number is good");
+      } else if (anyNumber <= 500) {
+        alert("please Enter Small Number");
+      } else {
+        alert("Please Enter Small Number 500 Range");
+      }
+      // question 2
+      alert("Compare Any Number");
+      var no1 = prompt("Enter First Number");
+      var no2 = prompt("Enter Second Number");
+
+      if (no1 > no2) {
+        alert(no1 + " is greater than " + no2);
+      } else if (no1 < no2) {
+        alert(no1 + " is Less than " + no2);
+      } else if ((no1 = no2)) {
+        alert(no1 + " is Equal " + no2);
+      } else {
+        alert("Please Type Number");
+      }
+
+      // // question 3
+      var value = prompt("Enter a Number");
+
+      if (value > 0) {
+        alert("Your Number is Positive");
+      } else if (value < 0) {
+        alert("Your Number is Nagative");
+      } else if ((value = 0)) {
+        alert("Your Number is zero");
+      } else {
+        alert("Please Enter Any Number");
+      }
+
+      // question 4
+
+      var even = prompt("Enter a Even Number");
+      if ((even %= 2)) {
+        alert("False");
+      } else {
+        alert("True");
+      }
+
+      // quetion 5
+
+      var enter = prompt("Enter password 123@456");
+
+      if (enter == "123@456") {
+        alert("Correct Password");
+      } else {
+        alert("Incorrect Password");
+      }
+
+      // question 6
+
+      var day = prompt("Enter a Hour From 24 hours");
+
+      if (day <= 6) {
+        alert("Good Morning");
+      } else if (day <= 16) {
+        alert("Good Day");
+      } else if (day <= 19) {
+        alert("Good evening");
+      } else if (day <= 24) {
+        alert("Good Night");
+      }
+    </script>
+  </body>
+</html>

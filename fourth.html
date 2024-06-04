@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="btns">
+      <a href="index.html"
+        ><button id="counter"><span>First</span></button></a
+      >
+      <a href="second.html"
+        ><button id="reset"><span>Second</span></button></a
+      >
+      <a href="third.html"
+        ><button id="counter"><span>Third</span></button></a
+      >
+      <a href="fourth.html"
+        ><button id="reset"><span>Fourth</span></button></a
+      >
+    </div>
+    <div class="img">
+      <a href="index.html"><img src="done.png" alt="next logo" /></a>
+    </div>
+    <script>
+      // question 1
+      var empty = [[], [], [], [], [], []];
+      // question 2
+      document.write("<br>" + "<h3>Q NO 2</h3>" + "<br>");
+      var nestedArry = [
+        [0, 1, 2, 3],
+        [1, 0, 1, 2],
+        [2, 1, 0, 1],
+      ];
+      for (var a = 0; a < nestedArry.length; a++) {
+        for (var i = 0; i < nestedArry[a].length; i++)
+          document.write(nestedArry[a][i] + ", ");
+      }
+
+      document.write("<br>");
+      document.write("<br>" + "<h3>Table</h3>" + "<br>");
+      let table = prompt("Enter any table number");
+      let length = prompt("Enter table length");
+
+      for (let i = 1; i <= length; i++) {
+        document.write(table + " X " + i + " = " + table * i + "<br>");
+      }
+
+      document.write("<br>" + "<h3>1 to 10 Numbring</h3>" + "<br>");
+      for (let i = 0; i <= 10; i++) {
+        document.write(" " + i + " ");
+      }
+
+      document.write("<br>");
+      document.write("<br>" + "<h3>10 to 1 Numbring with loops</h3>" + "<br>");
+      for (let i = 10; i >= 0; i--) {
+        document.write(" " + i + " ");
+      }
+
+      document.write("<br>");
+      // even numbers
+      document.write("<br>" + "<h3>Even Numbers</h3>" + "<br>");
+      for (var i = 2; i <= 20; i += 2) {
+        document.write(i + ", ");
+      }
+      // odd numbers
+      document.write("<br>");
+      document.write("<br>" + "<h3>Odd Numbers</h3>" + "<br>");
+      for (var i = 1; i <= 19; i += 2) {
+        document.write(i + ", ");
+      }
+      document.write("<br>");
+
+      // series
+      document.write("<br>");
+      document.write("<h3>Series:</h3>" + "<br>");
+      for (var i = 2; i <= 20; i += 2) {
+        document.write(i + "k, ");
+      }
+
+      // question 8
+
+      document.write("<br>");
+      var lg = [24, 53, 78, 91, 12];
+      var largNumber = lg[0];
+      for (var i = 0; i < lg.length; i++) {
+        if (lg[i] > largNumber) {
+          largNumber = lg[i];
+        }
+      }
+
+      document.write("<br>" + "<h3>Largest Number</h3>");
+      document.write("<br>" + "Some Numbers: " + lg);
+      document.write("<br>" + "Largest Number: " + largNumber);
+
+      document.write("<br>");
+      // question 9
+
+      var sm = [24, 53, 78, 91, 12];
+      var smallNumber = sm[0];
+      for (var i = 0; i < sm.length; i++) {
+        if (sm[i] < smallNumber) {
+          smallNumber = sm[i];
+        }
+      }
+
+      document.write("<br>" + "<h3>Smallest Number</h3>");
+      document.write("<br>" + "Some Numbers: " + sm);
+      document.write("<br>" + "Samllest Number: " + smallNumber);
+
+      document.write("<br>");
+      // question 10
+      document.write("<br>");
+      document.write("<h3>Multiples of 5 Number</h3>" + "<br>");
+      for (var i = 5; i <= 100; i += 5) {
+        document.write(i + ", ");
+      }
+    </script>
+  </body>
+</html>
